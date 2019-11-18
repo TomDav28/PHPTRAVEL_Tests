@@ -1,0 +1,26 @@
+{
+  "successful": [
+    {
+      "email": "tomdav2810@gmail.com",
+      "password": "Tomdav12"
+    },
+    {
+      "email": "tomdav2810@walla.com",
+      "password": "Tomdav28"
+    }
+  ],
+  "failing":[
+    {
+      "email": "tomer",
+      "password": "david"
+    },
+    {
+      "email": "tomer",
+      "password": ""
+    },
+    {
+      "email": "tomdav2810@gmail.com.",
+      "password": "david"
+    }
+  ]
+}
