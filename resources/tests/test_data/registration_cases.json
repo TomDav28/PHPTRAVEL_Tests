@@ -1,0 +1,52 @@
+{
+  "successful":[
+    {
+      "first_name": "KURUSAKI",
+      "last_name": "ICHIGO",
+      "phone": "111",
+      "email": "tomdav2810@gmail.com",
+      "password": "123456",
+      "confirm_password": "123456",
+      "errors": []
+    }
+  ],
+  "failing":[
+    {
+      "first_name": "",
+      "last_name": "",
+      "phone": "111",
+      "email": "tomdav2810@gmail.com",
+      "password": "123456",
+      "confirm_password": "123456",
+      "errors": ["first_name","last_name"]
+    },
+    {
+      "first_name": "KURUSAKI",
+      "last_name": "ICHIGO",
+      "phone": "111",
+      "email": "tomdav2810@gmail.com",
+      "password": "123",
+      "confirm_password": "123456",
+      "errors": ["short_password","password_mismatch"]
+    },
+    {
+      "first_name": "",
+      "last_name": "",
+      "phone": "",
+      "email": "",
+      "password": "",
+      "confirm_password": "123",
+      "errors": ["no_password","password_mismatch","first_name","last_name","no_email"]
+    },
+    {
+      "first_name": "SON",
+      "last_name": "GOKU",
+      "phone": "123",
+      "email": "NARUTO",
+      "password": "123",
+      "confirm_password": "123",
+      "errors": ["short_password","invalid_email"]
+    }
+
+  ]
+}

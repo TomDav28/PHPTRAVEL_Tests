@@ -2,7 +2,7 @@ from selenium.webdriver.common.by import By
 
 from resources.infra.pages.base_page import BasePage
 from resources.infra.pages.login_page import LoginPage
-from resources.settings.base_settings import LOGIN_URL
+from resources.settings.base_settings import LOGIN_URL, REGISTRATION_URL
 
 
 class HomePage(BasePage):
@@ -11,7 +11,13 @@ class HomePage(BasePage):
         super().__init__(driver)
 
         self.login_button = (By.CSS_SELECTOR,".dropdown-menu a[href='{url}']".format(url=LOGIN_URL))
+        self.sign_up_button = (By.CSS_SELECTOR,".dropdown-menu a[href='{url}']".format(url=REGISTRATION_URL))
+
 
     def go_to_login_page(self):
         self.open_my_account_dropdown()
         self.driver.find_element(*self.login_button).click()
+
+    def go_to_registration_page(self):
+        self.open_my_account_dropdown()
+        self.driver.find_element(*self.sign_up_button).click()

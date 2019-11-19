@@ -23,7 +23,7 @@ class LoginTests(BaseTest):
         self.assertIn("my account", self.login_page.get_my_account_button_text().lower())
 
     def test_login_case(self):
-        should_pass = self.param["should-pass"]
+        should_pass = self.param["should_pass"]
         login_case = self.param["login_case"]
         self.login_page.login_as(login_case)
         if should_pass:
@@ -38,7 +38,6 @@ class LoginTests(BaseTest):
             self.assertTrue(self.login_page.is_password_textbox_dispalyed())
             self.assertTrue(self.login_page.is_login_button_dispalyed())
         else:
-            self.login_page.get_email_validation_status()
             self.assertTrue(self.login_page.is_email_textbox_dispalyed())
             self.assertTrue(self.login_page.is_password_textbox_dispalyed())
             self.assertTrue(self.login_page.is_login_button_dispalyed())

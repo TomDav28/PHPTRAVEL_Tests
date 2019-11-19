@@ -61,6 +61,8 @@ class LoginPage(BasePage):
             return self.driver.find_element(*self.invalid_login_label).is_displayed()
         except NoSuchElementException:
             return False
-    def get_email_validation_status(self):
-        return self.driver.execute_script("return document.querySelector(arguments[0]).validity;",
-                                          self.email_textbox[1])
+
+    # def get_email_validation_status(self):
+    #     return self.driver.execute_script("return document.querySelector(arguments[0]).validity.valid;",
+    #                                       self.email_textbox[1])
+

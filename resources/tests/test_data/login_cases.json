@@ -9,7 +9,23 @@
       "password": "Tomdav28"
     }
   ],
-  "failing":[
+  "failing": [
+    {
+      "email": "tomdav2810@walla.com",
+      "password": "Tomdav12"
+    },
+    {
+      "email": "tomdav2810@gmail.com",
+      "password": "Tomdav28"
+    },
+    {
+      "email": "tomdav2810@walla.com",
+      "password": ""
+    },
+    {
+      "email": "tomdav2810@gmail.com",
+      "password": ""
+    },
     {
       "email": "tomer",
       "password": "david"
@@ -21,6 +37,50 @@
     {
       "email": "tomdav2810@gmail.com.",
       "password": "david"
+    },
+    {
+      "email": "tomdav2810@gmail",
+      "password": ""
+    },
+    {
+      "email": "@gmail.com.",
+      "password": "david"
+    },
+    {
+      "email": "@gmail.com.",
+      "password": "סיסמה"
+    },
+    {
+      "email": "אימייל",
+      "password": "סיסמה"
+    },
+    {
+      "email": "tomdav2810@gmail.com.tomdav2810@gmail.com.tomdav2810@gmail.com.tomdav2810@gmail.com.tomdav2810@gmail.com.tomdav2810@gmail.com.tomdav2810@gmail.com.tomdav2810@gmail.com.tomdav2810@gmail.com.tomdav2810@gmail.com.tomdav2810@gmail.com.tomdav2810@gmail.com.tomdav2810@gmail.com.tomdav2810@gmail.com.",
+      "password": "סיסמה"
+    },
+    {
+      "email": "פוקימון דיג'ימון בננות בפיג'מות",
+      "password": "ARE COOL"
+    },
+    {
+      "email": "tomer\n\n\n\n\n\n\n",
+      "password": "davidkgkgkgkg"
+    },
+    {
+      "email": "             @        .    ",
+      "password": "enter"
+    },
+    {
+      "email": "let me in",
+      "password": "                                                                                         "
+    },
+    {
+      "email": "",
+      "password": ""
+    },
+    {
+      "email": "WHY SO SERIOUS",
+      "password": "I WANT TO PLAY A GAME"
     }
   ]
 }

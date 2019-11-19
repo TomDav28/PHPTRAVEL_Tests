@@ -1,6 +1,6 @@
 {
   "is_headless": false,
   "tests_to_run": [
-    "login"
+    "register"
   ]
 }
