@@ -3,7 +3,7 @@ import unittest
 from chai import Chai
 
 
-class ParametrizedTestCase(Chai):
+class ParametrizedTestCase(unittest.TestCase):
     """ TestCase classes that want to be parametrized should
         inherit from this class.
     """

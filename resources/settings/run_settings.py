@@ -1,4 +1,6 @@
 import os
 
-IS_HEADLESS = os.environ['IS_HEADLESS'].lower() == "true"
+from resources.infra.utils import get_is_headless
+
+IS_HEADLESS = get_is_headless()
 
