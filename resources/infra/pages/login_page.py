@@ -20,10 +20,10 @@ class LoginPage(BasePage):
     def enter_password(self,password):
         self.driver.find_element(*self.password_textbox).send_keys(password)
 
-    def clear_email(self,email):
+    def clear_email(self):
         self.driver.find_element(*self.email_textbox).clear()
 
-    def clear_password(self,password):
+    def clear_password(self):
         self.driver.find_element(*self.password_textbox).clear()
 
     def press_login(self):
@@ -35,8 +35,8 @@ class LoginPage(BasePage):
         self.press_login()
 
     def clear_fields(self):
-        self.enter_email("")
-        self.enter_password("")
+        self.clear_email()
+        self.clear_password()
 
     def is_email_textbox_dispalyed(self):
         try:

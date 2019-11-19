@@ -4,7 +4,7 @@ from resources.infra.pages.home_page import HomePage
 from resources.infra.pages.login_page import LoginPage
 from resources.infra.utils import get_login_cases
 from resources.settings.base_settings import HOMEPAGE_URL
-from resources.tests.test_cases.base_test import BaseTest
+from resources.tests.base_tests.base_test import BaseTest
 
 
 class LoginTests(BaseTest):

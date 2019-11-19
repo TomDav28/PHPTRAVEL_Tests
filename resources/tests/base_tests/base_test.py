@@ -4,8 +4,12 @@ from resources.infra.browser import BrowserFactory
 from resources.settings.base_settings import *
 import os
 from chai import Chai
+import unittest
 
-class BaseTest(Chai):
+from resources.tests.base_tests.param_base_test import ParametrizedTestCase
+
+
+class BaseTest(ParametrizedTestCase):
     @classmethod
     def setUpClass(cls):
         cls.browser = BrowserFactory.create_browser()
@@ -16,7 +20,6 @@ class BaseTest(Chai):
         pass
 
     def tearDown(self):
-        self.browser.driver.close()
         pass
 
     @classmethod
