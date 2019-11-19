@@ -50,7 +50,7 @@ def add_login_to_suite(suite):
     return suite
 
 def add_registration_to_suite(suite):
-    from resources.tests.test_cases.registration_tests import RegistrationTests
+    from resources.tests.test_cases.registration_test import RegistrationTests
 
     registration_cases = get_registration_cases()
     for registration_case in registration_cases["successful"]:

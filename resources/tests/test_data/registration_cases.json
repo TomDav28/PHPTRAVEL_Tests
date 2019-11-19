@@ -36,7 +36,7 @@
       "email": "",
       "password": "",
       "confirm_password": "123",
-      "errors": ["no_password","password_mismatch","first_name","last_name","no_email"]
+      "errors": ["password","password_mismatch","first_name","last_name","email"]
     },
     {
       "first_name": "SON",
