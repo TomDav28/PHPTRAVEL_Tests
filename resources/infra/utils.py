@@ -71,8 +71,6 @@ def add_registration_to_suite(suite):
         ))
     return suite
 
-
-
 def get_is_headless():
     with open(TEST_SETTINGS_FILE_PATH) as f:
         test_settings = json.load(f)

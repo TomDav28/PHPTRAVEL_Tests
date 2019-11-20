@@ -1,13 +1,21 @@
+altgraph==0.16.1
 asn1crypto==1.2.0
 certifi==2019.9.11
 cffi==1.13.2
 chai==1.1.2
 cryptography==2.8
+future==0.18.2
+-e git+https://github.com/JamesMTSloan/HtmlTestRunner.git@2d23968f3fa6d607fdafe62f64b407b46ae311cb#egg=html_testRunner
 idna==2.8
+Jinja2==2.9.5
 linecache2==1.0.0
+MarkupSafe==1.1.1
+pefile==2019.4.18
 pycparser==2.19
+PyInstaller==3.5
 pyOpenSSL==19.0.0
 PySocks==1.7.1
+pywin32-ctypes==0.2.0
 selenium==3.141.0
 six==1.13.0
 traceback2==1.4.0
