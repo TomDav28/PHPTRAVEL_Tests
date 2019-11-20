@@ -8,21 +8,22 @@ Mac - Chrome v78
 
 **Build instructions:**
 1. Have Python 3.x and PIP installed on your device
-2. Navigate to project root:
+2. Clone the repo
+3. Navigate to project root:
 
     `cd <PATH_TO_PROJECT>/PHPTRAVELS_tests/`
     
-3. Install dependencies from requirements.txt :
+4. Install dependencies from requirements.txt :
     
     With PIP:
     
     `pip install -r requirements.txt`
  
- 4. Execute /run_me.py
+5. Execute /run_me.py
  
      `python run_me.py`
 
-NOTE - The program was developed on windows, I still experience permission issues with mac - especially regarding the access to ChromeDriver
+The program was developed on windows
 
 
 
@@ -58,12 +59,11 @@ NOTE - The program was developed on windows, I still experience permission issue
  
  **Given more time I would:**
  
-1. Fix mac compatibility issues
-2. Build the project into a standalone executable
-3. Add more assertions regarding the page integrity. Incuding base page properties that will provide more info on the top and bottom panels.
-4. Parametrize FlightTests more thoroughly (Modify every field)
-5. Annotate the Page Object Modules, but I do think they are pretty self explanatory
-6. Give test cases a unique name in favor of report analysis
+1. Build the project into a standalone executable
+2. Add more assertions regarding the page integrity. Incuding base page properties that will provide more info on the top and bottom panels.
+3. Parametrize FlightTests more thoroughly (Modify every field)
+4. Annotate the Page Object Modules, but I do think they are pretty self explanatory
+5. Give test cases a unique name in favor of report analysis
  
  
  
