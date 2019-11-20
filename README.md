@@ -30,7 +30,7 @@ The program was developed on windows
  
  **Understanding the project's files:**
  
- /executoion - Should contain different methods of running tests. Currently holds 1 method.
+ /execution - Should contain different methods of running tests. Currently holds 1 method.
  
  /reports - HTML test reports are saved here
  
