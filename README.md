@@ -41,7 +41,7 @@ The program was developed on windows
  /resources/infra - Contains Page Object Models, and the Browser class
  
  /resources/settings - base_settings.py contains the project paths and url. run_settings.py should hold parameters regarding the test execution, only one relevant for  now.
- test_settings.json states whether the tests will run headless or not, and which test are to run.
+ test_settings.json states whether the tests will run headless or not, and which tests are to run.
  This format is designed allow receiving a settings JSON externally.
  
  /tests/base_tests - The test case superclasses. ParametrizedTestCase adds the option to send parameters into test cases (see "param" in code),
