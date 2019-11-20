@@ -11,7 +11,7 @@ Mac - Chrome v78
 2. Clone the repo
 3. Navigate to project root:
 
-    `cd <PATH_TO_PROJECT>/PHPTRAVELS_tests/`
+    `cd <PATH_TO_PROJECT>/PHPTRAVELS_Ttests/`
     
 4. Install dependencies from requirements.txt :
     
