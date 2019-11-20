@@ -1,21 +1,71 @@
 #### PHPTRAVELS Automated Tests
 
-Prequisites:
-1. Navigate to project root:
+**Compatibilty:**
+
+Windows - Chrome v79
+Mac - Chrome v78
+
+
+**Build instructions:**
+1. Have Python 3.x and PIP installed on your device
+2. Navigate to project root:
 
     `cd <PATH_TO_PROJECT>/PHPTRAVELS_tests/`
-2. Install dependencies from requirements.txt :
-
-    With Anaconda:
     
-    `conda install --yes --file requirements.txt`
+3. Install dependencies from requirements.txt :
     
     With PIP:
     
     `pip install -r requirements.txt`
-3. Add provided chromedriver folder to your computer PATH:
-    
-   In project directory:
-   
-    `/PHPTRAVELS_tests/resources/chromedriver"`
-    
+ 
+ 4. Execute /run_me.py
+ 
+     `python run_me.py`
+
+NOTE - The program was developed on windows, I still experience permission issues with mac - especially regarding the access to ChromeDriver
+
+
+
+ 
+ **Understanding the project's files:**
+ 
+ /executoion - Should contain different methods of running tests. Currently holds 1 method.
+ 
+ /reports - HTML test reports are saved here
+ 
+  /resources/chromedriver - Here lies the chromedriver binaries. If you don't have chrome updated to the versions stated above,
+  you can replace the files with relevant ones from https://chromedriver.chromium.org/downloads
+
+ /resources/infra - Contains Page Object Models, and the Browser class
+ 
+ /resources/settings - base_settings.py contains the project paths and url. run_settings.py should hold parameters regarding the test execution, only one relevant for  now.
+ test_settings.json states whether the tests will run headless or not, and which test are to run.
+ This format is designed allow receiving a settings JSON externally.
+ 
+ /tests/base_tests - The test case superclasses. ParametrizedTestCase adds the option to send parameters into test cases (see "param" in code),
+ and BaseTest adds the functionality relevant for a Selenium project.
+ 
+ /tests/test_cases - Test logic files. All designed to work with provided test data and won't run on their own.
+ 
+ /tests/test_data - JSONs that provide the test case data. The project is designed to read all data provided within these files, in case the corresponding test was provided in test_settings.json
+ Planned this way to allow receiving these JSONs from an external source.
+ 
+ /tests/test_data/test_utils.py - A collection of functions that mostly help extract and aggregate test cases.
+ 
+ /src - This directory was added after importing the HTMLTestRunner from a private github repository. The main project was abandoned and this version provided more functionality.
+ 
+ /run_me.py - A CLI / entry point for a build tool.
+ 
+ **Given more time I would:**
+ 
+1. Fix mac compatibility issues
+2. Build the project into a standalone executable
+3. Add more assertions regarding the page integrity. Incuding base page properties that will provide more info on the top and bottom panels.
+4. Parametrize FlightTests more thoroughly (Modify every field)
+5. Annotate the Page Object Modules, but I do think they are pretty self explanatory
+6. Give test cases a unique name in favor of report analysis
+ 
+ 
+ 
+ 
+ 

@@ -12,9 +12,9 @@ from resources.tests.base_tests.param_base_test import ParametrizedTestCase
 class BaseTest(ParametrizedTestCase):
     @classmethod
     def setUpClass(cls):
+        # Create the test scenario's browser and driver objects
         cls.browser = BrowserFactory.create_browser()
         cls.driver = cls.browser.driver
-        cls.wait = WebDriverWait(cls.driver, 60)
 
     def setUp(self):
         pass
@@ -24,4 +24,5 @@ class BaseTest(ParametrizedTestCase):
 
     @classmethod
     def tearDownClass(cls):
+        # Close the browser in the end of the scenario
         cls.browser.driver.quit()

@@ -1,6 +1,6 @@
 {
-  "is_headless": true,
+  "is_headless": false,
   "tests_to_run": [
-    "register","login"
+    "flight","login","register"
   ]
 }
