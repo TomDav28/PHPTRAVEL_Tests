@@ -22,15 +22,10 @@ class BrowserFactory:
             options.add_experimental_option('w3c', False)
             options.add_argument('--no-proxy-server')
             options.add_argument('--disable-dev-shm-usage')
-            if os.name == 'nt':
-                driver = webdriver.Chrome(chrome_options=options)
-            elif os.name == 'posix':
-                driver = webdriver.Chrome(chrome_options=options, executable_path=CHROMEDRIVER_EXE_PATH)
+
+            driver = webdriver.Chrome(chrome_options=options, executable_path=CHROMEDRIVER_EXE_PATH)
         else:
-            if os.name == 'nt':
-                driver = webdriver.Chrome()
-            elif os.name == 'posix':
-                driver = webdriver.Chrome(executable_path=CHROMEDRIVER_EXE_PATH)
+            driver = webdriver.Chrome(executable_path=CHROMEDRIVER_EXE_PATH)
 
         return Browser(driver, implicitly_wait)
 
