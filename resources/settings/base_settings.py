@@ -3,7 +3,10 @@ import os
 PROJECT_DIR_PATH = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 RESOURCES_DIR_PATH = os.path.join(PROJECT_DIR_PATH, "resources")
 CHROMEDRIVER_DIR_PATH = os.path.join(RESOURCES_DIR_PATH, "chromedriver")
+CHROMEDRIVER_EXE_PATH = os.path.join(RESOURCES_DIR_PATH, "chromedriver")
+if os.name == 'nt': CHROMEDRIVER_EXE_PATH += '.exe'
 os.environ["PATH"] += os.pathsep + CHROMEDRIVER_DIR_PATH
+
 
 TEST_DIR_PATH = os.path.join(RESOURCES_DIR_PATH, "tests")
 TEST_DATA_DIR_PATH = os.path.join(TEST_DIR_PATH, "test_data")
@@ -18,4 +21,3 @@ LOGOUT_URL = "https://www.phptravels.net/account/logout/"
 LOGIN_URL = "https://www.phptravels.net/login"
 REGISTRATION_URL = "https://www.phptravels.net/register"
 HOMEPAGE_URL = "https://www.phptravels.net/"
-

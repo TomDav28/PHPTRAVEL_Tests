@@ -1,6 +1,7 @@
 import os
 import re
 
+from resources.settings.base_settings import CHROMEDRIVER_EXE_PATH, CHROMEDRIVER_DIR_PATH
 from resources.settings.run_settings import IS_HEADLESS
 from selenium import webdriver
 from selenium.webdriver import ActionChains
@@ -11,7 +12,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 class BrowserFactory:
     @staticmethod
     def create_browser(implicitly_wait=10,headless = IS_HEADLESS):
-
+        driver = None
         if headless:
             options = webdriver.ChromeOptions()
             options.add_argument('--no-sandbox')
@@ -21,9 +22,16 @@ class BrowserFactory:
             options.add_experimental_option('w3c', False)
             options.add_argument('--no-proxy-server')
             options.add_argument('--disable-dev-shm-usage')
-            driver = webdriver.Chrome(chrome_options=options)
+            if os.name == 'nt':
+                driver = webdriver.Chrome(chrome_options=options)
+            elif os.name == 'posix':
+                driver = webdriver.Chrome(chrome_options=options, executable_path=CHROMEDRIVER_EXE_PATH)
         else:
-            driver = webdriver.Chrome()
+            if os.name == 'nt':
+                driver = webdriver.Chrome()
+            elif os.name == 'posix':
+                driver = webdriver.Chrome(executable_path=CHROMEDRIVER_EXE_PATH)
+
         return Browser(driver, implicitly_wait)
 
 
