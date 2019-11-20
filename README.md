@@ -63,7 +63,7 @@ The program was developed on windows
 1. Build the project into a standalone executable
 2. Add more assertions regarding the page integrity. Incuding base page properties that will provide more info on the top and bottom panels.
 3. Parametrize FlightTests more thoroughly (Modify every field)
-4. Annotate the Page Object Modules, but I do think they are pretty self explanatory
+4. Annotate the Page Object Models, but I do think they are pretty self explanatory
 5. Give test cases a unique name in favor of report analysis
  
  
