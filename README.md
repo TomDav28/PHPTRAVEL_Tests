@@ -3,6 +3,7 @@
 **Compatibilty:**
 
 Windows - Chrome v79
+
 Mac - Chrome v78
 
 
