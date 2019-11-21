@@ -12,7 +12,7 @@ Mac - Chrome v78
 2. Clone the repo
 3. Navigate to project root:
 
-    `cd <PATH_TO_PROJECT>/PHPTRAVELS_Ttests/`
+    `cd <PATH_TO_DIR>/PHPTRAVELS_Tests/`
     
 4. Install dependencies from requirements.txt :
     
@@ -61,11 +61,10 @@ The program was developed on windows
  **Given more time I would:**
  
 1. Build the project into a standalone executable
-2. Add more assertions regarding the page integrity. Incuding base page properties that will provide more info on the top and bottom panels.
+2. Add more assertions regarding the page integrity. Incuding BasePage properties that will provide more info on the top and bottom panels.
 3. Parametrize FlightTests more thoroughly (Modify every field)
-4. Annotate the Page Object Models, though I do think the code is self explanatory
-5. Give test cases a unique name in favor of report analysis
- 
+4. Give test cases a unique name in favor of report analysis
+5. Annotate the Page Object Models, though I do think the code is self explanatory
  
  
  
