@@ -3,7 +3,7 @@ asn1crypto==1.2.0
 certifi==2019.9.11
 cffi==1.13.2
 chai==1.1.2
-cryptography==2.8
+cryptography==3.2
 future==0.18.2
 -e git+https://github.com/JamesMTSloan/HtmlTestRunner.git@2d23968f3fa6d607fdafe62f64b407b46ae311cb#egg=html_testRunner
 idna==2.8
