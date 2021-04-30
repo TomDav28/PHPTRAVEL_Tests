@@ -21,6 +21,6 @@ selenium==3.141.0
 six==1.13.0
 traceback2==1.4.0
 unittest2==1.1.0
-urllib3==1.25.6
+urllib3==1.25.8
 win-inet-pton==1.1.0
 wincertstore==0.2
